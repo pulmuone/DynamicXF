@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DynamicXF.MainPage">
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height = "60"/>
+                <RowDefinition x:Name="Header2Row"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <Grid Grid.Row="0">
+                <Button Text="테스트 버튼"/>
+            </Grid>
+
+            <Grid x:Name="Header2" Grid.Row="1" ></Grid>
+
+            <Grid Grid.Row="2">
+                <!--CollectionView-->
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
